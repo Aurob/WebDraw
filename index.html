@@ -1,0 +1,35 @@
+<html id="index">
+<head>
+  <script src="jscolor.js"></script>
+  <link type="text/css" rel="stylesheet" href="CSS.css"/>
+</head>
+<body id="body" style='text-align:center'>
+
+  <div id="header">OTIOSUS</div>
+  <div id="main"><canvas id='myCanvas' width="5000" height="5000"></canvas>
+    <canvas id='myCanvas2' width="5000" height="5000"></canvas>
+                 </div>
+  <div id="social">
+    <div id="form">
+      <div style="border: outset black 2px; text-align:center;">Users Online</div>
+      <div id="users"><div style="border:outset black 2px"></div><br></div>
+      <input id="name"/>
+      <button type="button" id="userButt">Username</button>
+    </div>
+    <div id="drawing">
+      <div style="border:outset black 2px">Drawing Options</div><br>
+      <div style="float:right">Pen Color: <input class="jscolor" id="color" value="000"/><br></div>
+      <div  style="float:right">Pen Size: <input id="size" value="10"/></div>
+
+    </div>
+    <div id="chatIn">
+      <input id="msgIn"/>
+      <button type="button" id="msgButt">Send</button>
+    </div>
+    <div id="messages"></div>
+  </div>
+  <div id="footer">OTIOSUS</div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/stuff.js"></script>
+</body>
+</html>

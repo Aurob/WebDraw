@@ -1,0 +1,184 @@
+html{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 100%;
+}
+
+#login{
+	position:absolute;
+	bottom:50%;
+	left: 50%;
+}
+#footer{
+	border: solid red 3px;
+	border-style: groove;
+	position: absolute;
+	width:99.5%;
+	bottom: 0;
+	left: 1;
+	text-align: center;
+	background-color: white;
+}
+
+#header{
+	border: solid red 3px;
+	border-style: groove;
+	position: absolute;
+	width:99.5%;
+	top: 0;
+	left: 1;
+	text-align: center;
+	background-color: white;
+}
+#form{
+	text-align: center;
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	margin-top: -37.5px;
+  margin-left: -230px;
+	background-color: white;
+}
+
+/*#messages{
+	border: solid red 3px;
+	bottom: 10%;
+}*/
+#social{
+	border: solid blue 3px;
+	border-style: groove;
+	position: absolute;
+	bottom: 25;
+	left: 1;
+	text-align: left;
+	height: 250;
+	width:99.5%;
+	background-color: white;
+	z-index: 2
+}
+
+#main {
+	overflow-y:scroll;
+	border: solid orange 3px;
+	border-style: groove;
+	position:absolute;
+	left: 1;
+	width:99.5%;
+	bottom: 150;
+	top: 25;
+	text-align: left;
+	height: 65%;
+	background-color: white;
+}
+#messages{
+	overflow:auto;
+	word-wrap: break-word;
+	border: solid green 3px;
+	border-style: groove;
+	position: absolute;
+	right: 0;
+	left: 1;
+  bottom: 32;
+	text-align: left;
+	height: 212;
+	width:538;
+	background-color: white;
+}
+#users{
+	text-align: center;
+}
+#msgButt{
+	border: solid black 3px;
+	border-style: groove;
+	position:fixed;
+	right: 0;
+	left: 4;
+  bottom: 29;
+	text-align: left;
+	height: 27;
+	background-color: lightgrey;
+}
+#userButt{
+	border: solid black 3px;
+	border-style: groove;
+	position:fixed;
+	right: 0;
+	left: 549;
+  bottom: 29;
+	text-align: left;
+	height: 27;
+	background-color: lightgrey;
+}
+#msgIn{
+	border: solid black 3px;
+	border-style: groove;
+	position:fixed;
+	right: 0;
+	left:54;
+  bottom: 29;
+	text-align: left;
+	height: 27;
+	width: 494;
+	background-color: white;
+}
+
+#name{
+	border: solid black 3px;
+	border-style: groove;
+	position:fixed;
+	right: 0;
+	left: 628;
+  bottom: 29;
+	text-align: left;
+	height: 27;
+	width: 175;
+	background-color: white;
+}
+#form{
+	overflow:auto;
+	word-wrap: break-word;
+	border: solid green 3px;
+	border-style: groove;
+	position: absolute;
+	left: 776;
+	top: 37;
+	text-align: right;
+	bottom: -123;
+	height: 213;
+	width: 250;
+	background-color: white;
+}
+#drawing{
+	overflow:auto;
+	word-wrap: break-word;
+	border: solid green 3px;
+	border-style: groove;
+	position: absolute;
+	left: 802;
+	top: 0;
+	text-align: center;
+	bottom: -123;
+	height: 213;
+	width: 250;
+	background-color: white;
+}
+#myCanvas{
+	border: solid purple 3px
+	border-style: groove;
+	position:absolute;
+	display: inline;
+	left: 0;
+	top:0
+	z-index:0;
+	cursor:none;
+}
+#myCanvas2{
+	position:absolute;
+	display: inline;
+	left: 0;
+	top:0
+	z-index: 1;
+	cursor:none;
+}
