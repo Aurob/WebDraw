@@ -16,14 +16,6 @@ app.get('/*', function(req, res){
   res.sendFile('index.html', { root: __dirname });
 });
 
-//This is to be used in conjuction with 'nodemon'
-// app.use(myParser.urlencoded({extended : true}));
-// app.post("/git", function(request, response) {
-//   console.log(JSON.parse(request.body.payload).head_commit);
-//   shell.exec('sudo git pull');
-// });
-
-
 function onConnect(socket){
   oldUser=false;
 
@@ -79,7 +71,6 @@ function onConnect(socket){
       if(users[a][2] == socket.id){
         console.log("disconnecting "+users[a][1]);
         users.splice(a,1);
-        //users.splice(a,1);
       }
     }
     socket.broadcast.emit('users',users);
@@ -88,11 +79,3 @@ function onConnect(socket){
 io.on('connection',onConnect);
 http.listen(port, () => console.log('listening on '+port));
 
-/*
-var tweets = setInterval(function () {
-   getBieberTweet(function (tweet) {
-     socket.volatile.emit('bieber tweet', tweet);
-   });
- }, 100);
-
-*/
